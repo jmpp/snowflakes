@@ -4,20 +4,42 @@
 	<title>Snowflakes.js - Happy New Year 2014 from @_jmpp</title>
 
 	<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+	<style>
+	.row img {
+		max-width: 100%;
+	}
+	</style>
 </head>
 <body>
 
 <div class="container text-center">
-	<h1>SnowFlakes</h1>
-	<p class="lead">Put snowflakes in any website you visit.<br>
-		Happy New Year 2014 :)</p>
+	<h1>Happy New Year 2014 :)</h1>
+	<p class="lead">Turn your web page in a "snowy christmas atmosphere"</p>
 	<hr>
-	<a href="javascript:var%20s%20%3D%20document.createElement(%27script%27)%3Bs.src%20%3D%20%27https%3A%2F%2Fraw.github.com%2Fjmpp%2Fsnowflakes%2Fmaster%2Fhappynewyear2014.min.js%27%3Bdocument.body.appendChild(s)%3B" title="Start throwing snowflakes" class="btn btn-lg btn-primary"><i class="glyphicon glyphicon-move"></i> Start throwing snowflakes</a>
+	<!--<a href="javascript:var%20s%20%3D%20document.createElement(%27script%27)%3Bs.src%20%3D%20%27https%3A%2F%2Fraw.github.com%2Fjmpp%2Fsnowflakes%2Fmaster%2Fhappynewyear2014.min.js%27%3Bdocument.body.appendChild(s)%3B" title="Start throwing snowflakes" class="btn btn-lg btn-primary"><i class="glyphicon glyphicon-move"></i> Start throwing snowflakes</a>-->
+	
+	<div class="row">
+	<div class="col-md-4 col-md-offset-4 alert alert-info">
+		<p>Drag this magic button to your bookmarks,<br>
+		and clic on it when you visit any web page :</p><br>
+
+		<a href='javascript:(function(){var d=30;var j=[];var a=0;var l=[];var m=225;if(!document.getElementById("happynewyear2014audio")){var k=document.createElement("audio");k.id="happynewyear2014audio";k.autoplay=true;var b=document.createElement("source");var o=document.createElement("source");var q=document.createElement("source");b.src="https://raw.github.com/jmpp/snowflakes/master/audio/Auld-Lang-Syne-8-Bit-cutted.mp3";o.src="https://raw.github.com/jmpp/snowflakes/master/audio/Auld-Lang-Syne-8-Bit-cutted.ogg";q.src="https://raw.github.com/jmpp/snowflakes/master/audio/Auld-Lang-Syne-8-Bit-cutted.wav";k.appendChild(b);k.appendChild(o);k.appendChild(q);document.body.appendChild(k)}for(var h=0;h<d;h++){var g=new Image();g.src="https://raw.github.com/jmpp/snowflakes/master/flocon.png";g.style.position="fixed";g.style.zIndex="9999";g.onload=(function(){l.push(this);if(++a===d){p()}}).bind(g)}function p(){var u,t,v;for(var r=0;r<l.length;r++){u=n(2,10);t="hsla(0,0%,45%,"+u/10+")";v="hsla(0,0%,55%,"+u/10+")";j.push({img:l[r],x:n(0,window.innerWidth),y:n(0,m),w:g.width,h:g.height,scale:n(0.2,0.6),alpha:1,direction:Math.PI/3,rotation:0,rotationSpeed:n(-1*u*0.2*0.008,u*0.2*0.008),speed:u*0.2});document.body.appendChild(l[r])}requestAnimFrame(e)}function f(){for(var r=0,u=j.length;r<u;r++){var t=j[r];t.alpha=(m-t.y)/m;t.rotation+=t.rotationSpeed;t.y+=Math.sin(t.direction)*t.speed;if(t.x+(t.w*t.scale)>window.innerWidth){t.x=-t.w*t.scale}if(t.y+(t.h*t.scale)>m){t.y=-t.h*t.scale}if(t.x+(t.w*t.scale)<0){t.x=window.innerWidth}if(t.y+(t.h*t.scale)<0){t.y=m}}}function c(){var u;for(var r=0,v=j.length;r<v;r++){var t=j[r];t.img.style.opacity=t.alpha;t.img.style.webkitTransform="scale("+t.scale+","+t.scale+") rotate("+(t.rotation*180/Math.PI)+"deg)";t.img.style.mozTransform="scale("+t.scale+","+t.scale+") rotate("+(t.rotation*180/Math.PI)+"deg)";t.img.style.msTransform="scale("+t.scale+","+t.scale+") rotate("+(t.rotation*180/Math.PI)+"deg)";t.img.style.transform="scale("+t.scale+","+t.scale+") rotate("+(t.rotation*180/Math.PI)+"deg)";t.img.style.left=t.x+"px";t.img.style.top=t.y+"px"}}function e(i){f();c();requestAnimFrame(e)}function n(r,i){return(Math.random()*(i-r))+r}window.requestAnimFrame=(function(){return window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||function(i){window.setTimeout(i,1000/60)}})()})();' title="Make snowflakes falling !" class="btn btn-lg btn-primary"><i class="glyphicon glyphicon-move"></i> Make snowflakes falling !</a>
+	</div>
+	</div>
+
 	<hr>
-	<img src="tuto.png"><br>
+	<div class="row">
+		<div class="col-md-6">
+			<img src="tuto.png">
+		</div>
+		<div class="col-md-6">
+			<img src="tuto2.png">
+		</div>
+	</div>
 	<hr>
 	<p><a href="https://twitter.com/_jmpp">@_jmpp</a> wishes you a merry christmas and a happy new year !<br>
-		&bull; <a href="https://github.com/jmpp/snowflakes">Source on Github</a> &bull;</p>
+		&bull; Awesome 8-bits music in courtesy of <a href="https://www.youtube.com/watch?v=WlhXiXs_A_Y" title="MrBulbamike's Youtube">MrBulbamike</a> &bull;<br>
+		&bull; Full source on <a href="https://github.com/jmpp/snowflakes">Github</a> &bull;
 </div>
 
 </body>
