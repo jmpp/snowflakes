@@ -6,5 +6,5 @@ Drag the magic button to your bookmarks and clic on it when you visit any web pa
 
 *Awesome 8-bits music in courtesy of [MrBulbamike](https://www.youtube.com/watch?v=WlhXiXs_A_Y) !*
 
-I wishes you a Happy new year 2014 :)
+I wish you a Happy new year 2014 :)
 ---
